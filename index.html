@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>テスト勉強用サイト</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header id="header">
+            <div id="headerLine">
+                <a href="#" id="homeBtn" class="headerBtn">ホーム</a>
+                <div id="headerRight">
+                    <a href="#" id="AnnounceBtn" class="headerBtn">お知らせ</a>
+                    <a href="#" id="siteInfoBtn" class="headerBtn">サイト情報</a>
+                </div>
+            </div>
+        </header>
+        <div id="lobby">
+            <div id="functions">
+                <ul>
+                    <li><a href="#" id="studyTimer" class="functionsText" style="font-size: 30px; width: 100%;border: none;">勉強タイマー</a></li>
+                    <li><a href="#" id="calculator" class="functionsText">電卓</a></li>
+                    <li><a href="#" id="freeSpace" class="functionsText">フリースペース</a></li>
+                </ul>
+            </div>
+            <div id="Result">
+                <p id="studyTimeRecord">合計勉強時間：0</p>
+            </div>
+        </div>
+        <div id="main">
+            <div id="myTarget">
+                <br>
+                <div id="targetView">
+                    <h1 style="text-align: center;font-size: 70px;text-decoration: underline;">目標達成度</h1>
+                    <h1 id="targetView1" class="targetText">0（分）</h1>
+                    <h1 id="targetView2" class="targetText">0（分）</h1>
+                </div>
+                <br>
+                <div id="targetEdit">
+                    <h2 style="text-align: center;">目標を設定</h2>
+                    <label><input type="number" value="0" id="targetEditInput"> 分</label>
+                    <button type="button" value="決定" id="targetEditInputOption">決定</button>
+                </div>
+                <div id="timer">
+                    <h2 id="timerText">00:00</h2>
+                </div>
+                <h1 id="reportText">目標未達成</h1>
+            </div>
+        </div>
+        <div id="functionsDisplay">
+            <div id="onFunctionsDisplay">
+                <div id="calculatorDisplay">
+                    <p id="calculatorAnsText">00000</p>
+                    <input type="number" id="calculatorInput1">
+                    <select id="calculatorOperator">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>×</option>
+                        <option>÷</option>
+                    </select>
+                    <input type="number" id="calculatorInput2">
+                    <button type="button" id="calculatorSelect">=</button>
+                </div>
+                <div id="freeSpaceDisplay">
+                    <h1 style="text-align: center;">フリースペース</h1>
+                    <textarea style="width: 95%;margin: 0 auto;" rows="40"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="infoDisplay">
+            <div id="onInfoDisplay">
+                <div id="announceDisplay">
+                    <h1 style="text-align: center; height: 10%;">お知らせ</h1>
+                    <!--お知らせ-->
+                    <div id="announceMain">
+                        <h1 id="announceHeading">
+                            <!--見出しを入力-->
+                            Ver 1.4実装
+                        </h1>
+                        <p id="announceMinHeading">
+                            <!--詳細を入力-->
+                            Ver 1.4を実装しました。サイトがブラッキーに公開され、ミッション機能が追加されました。
+                        </p>
+                    </div>
+                </div>
+                <div id="siteInfoDisplay">
+                    <h1 style="text-align: center;">サイト情報</h1>
+                    <!--サイト情報-->
+                    <details>
+                        <summary class="siteInfoFast">Ver 1.X</summary>
+                        <details>
+                            <summary class="siteInfoTwoAF">Ver 1.0</summary>
+                            <p class="siteInfoText">勉強タイマー機能の基盤が作られました。当時はx/yのxが動かず、タイマーとして機能していませんでした。</p>
+                        </details>
+                        <details>
+                            <summary class="siteInfoTwoAF">Ver 1.1</summary>
+                            <p class="siteInfoText">勉強タイマーの上のゲージが動くようになりました。目標を達成しているかなどのメッセージも追加されました。1.0ではアラート式でバグが多かったです。</p>
+                        </details>
+                        <details>
+                            <summary class="siteInfoTwoAF">Ver 1.2</summary>
+                            <p class="siteInfoText">スタイルが少し変わりました。ロビーが追加され、電卓とフリースペースが追加されました。</p>
+                        </details>
+                        <details>
+                            <summary class="siteInfoTwoAF">Ver 1.3</summary>
+                            <p class="siteInfoText">ロビースタイルが変わりましたヘッダーにお知らせとサイト情報が追加されました。今見ているものがこの時に追加されました。</p>
+                        </details>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

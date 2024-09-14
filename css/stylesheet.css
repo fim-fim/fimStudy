@@ -1,0 +1,214 @@
+html,body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,a,p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 6%;
+    background-color: black;
+}
+#headerLine {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50%;
+}
+.headerBtn {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 3px;
+    background-color: white;
+    float: left;
+    transition: all 0.5s;
+}
+.headerBtn:hover {
+    color: white;
+    border: 2px solid black;
+    background: black;
+}
+#headerRight {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+#headerRight .headerBtn {
+    float: right;
+    margin-right: 50px;
+}
+#functions {
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 45%;
+    height: 50%;
+}
+#functions ul li {
+    list-style: none;
+}
+.functionsText {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    background-color: gray;
+    border-top: 2px solid black;
+    text-decoration: none;
+    transition: all 0.5s;
+    width: 100%;
+    text-align: center;
+}
+.functionsText:hover {
+    color: gray;
+    background-color: whitesmoke;
+}
+#functionsDisplay,#infoDisplay {
+    position: fixed;
+    top: 6%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(128, 128, 128, 0.6);
+}
+#onFunctionsDisplay,#onInfoDisplay {
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 30%;
+    right: 30%;
+    background-color: white;
+    border-radius: 7px;
+}
+#calculatorDisplay {
+    width: 100%;
+    height: 100%;
+}
+#calculatorAnsText {
+    width: calc(100% - 2px);
+    background-color: gainsboro;
+    height: calc(5% - 2px);
+    border: 2px solid black;
+    font-size: 20px;
+}
+#calculatorInput1,#calculatorInput2 {
+    width: 40%;
+    height: 10%;
+    font-size: 30px;
+}
+#main,#lobby {
+    width: 100%;
+    height: 94%;
+    background-color: aliceblue;
+}
+#myTarget {
+    width: 50%;
+    height: 100%;
+    
+}
+#targetView {
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 10px;
+}
+#targetView1 {
+    border-bottom: 2px solid black;
+}
+.targetText {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    margin-left: 10px;
+}
+#targetEdit {
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 10px;
+}
+#targetEditInput {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+#targetEditInputOption {
+    padding: 7px 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 10px;
+}
+#targetEditInputOption:hover {
+    opacity: 0.6;
+}
+#timerText {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 20px 0;
+}
+#reportText {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+#Result {
+    width: 45%;
+    height: 40%;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-top: 2%;
+}
+.siteInfoFast {
+    display: block;
+    background-color: gray;
+    padding: 0 10px;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.siteInfoTwoAF {
+    display: block;
+    background-color: dimgray;
+    color: white;
+    border-top: 1px solid white;
+    cursor: pointer;
+}
+.siteInfoText {
+    background-color: gainsboro;
+}
+#announceDisplay {
+    height: 100%;
+    width: 100%;
+}
+#announceMain {
+    height: calc(90% - 2px);
+    width: calc(100% - 2px);
+    border: 2px solid black;
+    border-radius: 7px;
+}
+#announceHeading {
+    text-align: center;
+}
+#announceMinHeading {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
