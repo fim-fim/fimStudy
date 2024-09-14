@@ -162,6 +162,16 @@ document.getElementById('targetEditInputOption').addEventListener("click",()=>{
             document.getElementById('reportText').textContent = "目標達成";
             document.getElementById('reportText').style.color = "red";
             document.getElementById('studyTimeRecord').textContent = "合計勉強時間："+studyTime;
+            var mission1 = document.getElementById('missionRate1');
+            var mission2 = document.getElementById('missionRate2');
+            mission1.textContent = studyTime + " / 60";
+            mission2.textContent = studyTime + " / 120";
+            if(studyTime > 59) {
+                mission1.style.color = "red";
+            }
+            if(studyTime > 119) {
+                mission2.style.color = "red";
+            }
         }
     },60000)
 })

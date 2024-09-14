@@ -14,6 +14,16 @@ header {
     height: 6%;
     background-color: black;
 }
+#lobbyLeft {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+#lobbyRight {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
 #headerLine {
     position: absolute;
     top: 50%;
@@ -51,7 +61,7 @@ header {
 #functions {
     border: 2px solid black;
     border-radius: 7px;
-    width: 45%;
+    width: 95%;
     height: 50%;
 }
 #functions ul li {
@@ -168,7 +178,7 @@ header {
     padding: 5px;
 }
 #Result {
-    width: 45%;
+    width: 95%;
     height: 40%;
     border: 2px solid black;
     border-radius: 7px;
@@ -211,4 +221,26 @@ header {
     margin-top: 10px;
     font-weight: bold;
     text-align: center;
+}
+#missions {
+    width: 95%;
+    height: 40%;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+#missions li {
+    list-style: none;
+}
+.missions {
+    display: block;
+    text-align: center;
+    color: black;
+    background-color: gainsboro;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 3px;
+}
+.missions span {
+    color: black;
+    background-color: gainsboro;
 }
